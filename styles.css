@@ -943,6 +943,18 @@ img { display: block; max-width: 100%; }
   color: var(--border);
   letter-spacing: 0.05em;
 }
+.footer-designer {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.footer-designer a {
+  color: #C8F53E;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
 
 /* =============================
    RESPONSIVE
