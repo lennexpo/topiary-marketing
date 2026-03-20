@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#05080f"/>
+  <rect width="64" height="64" rx="14" fill="url(#grad)" opacity="0.6"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a6dff;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#0a4fcc;stop-opacity:0.2"/>
+    </linearGradient>
+  </defs>
+  <!-- T letter -->
+  <text x="32" y="46" font-family="Georgia, serif" font-size="38" font-weight="700"
+        fill="#1a6dff" text-anchor="middle" dominant-baseline="auto">T</text>
+  <!-- Bottom accent line -->
+  <rect x="18" y="54" width="28" height="2.5" rx="1.25" fill="#1a6dff" opacity="0.7"/>
+</svg>
