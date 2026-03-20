@@ -1,119 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Topiary Marketing (Pvt) Ltd — Ink, Toner & Printer Repairs, Harare</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Topiary Marketing (Pvt) Ltd | Zimbabwe's Premier Office Solutions Partner</title>
+  <meta name="description" content="Topiary Marketing – Zimbabwe's trusted supplier of toner cartridges, ink cartridges, printers, laptops, stationery, and hardware since 1999. Electra House, Harare."/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="shortcut icon" href="favicon.svg"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <a href="#hero" class="nav-logo">
-      <div class="logo-container">
-        <span class="brand-leaf">✦</span>
-        <span class="brand-name">TOPIARY</span>
-        <span class="brand-sub">MARKETING</span>
+  <!-- ─── PRELOADER ───────────────────────────── -->
+  <div id="preloader">
+    <div class="pre-inner">
+      <div class="pre-logo">
+        <span class="pre-t">T</span><span class="pre-rest">opiary Marketing</span>
       </div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#brands">Brands</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+      <div class="pre-bar-track"><div class="pre-bar"></div></div>
+      <p class="pre-label">Loading…</p>
+    </div>
+  </div>
+
+  <!-- ─── SCROLL PROGRESS ─────────────────────── -->
+  <div id="scroll-progress"></div>
+
+  <!-- ─── NAVIGATION ──────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-accent">T</span>opiary
+        <span class="logo-sub">Marketing</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#why-us"   class="nav-link">Why Us</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#contact"  class="nav-link nav-cta">Get a Quote</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" id="mobileClose">✕</button>
+  <!-- ─── MOBILE MENU ──────────────────────────── -->
+  <div class="mobile-menu" id="mobile-menu">
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#brands">Brands</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#about"    class="mob-link">About</a></li>
+      <li><a href="#services" class="mob-link">Services</a></li>
+      <li><a href="#why-us"   class="mob-link">Why Us</a></li>
+      <li><a href="#products" class="mob-link">Products</a></li>
+      <li><a href="#contact"  class="mob-link">Contact</a></li>
     </ul>
   </div>
 
-  <!-- HERO -->
-  <section class="section hero" id="hero">
-    <div class="hero-grid"></div>
-    <div class="hero-orb orb-1"></div>
-    <div class="hero-orb orb-2"></div>
+  <!-- ─── HERO ────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-bg.jpg.jpg" alt="Professional printer ink cartridges" class="hero-img"/>
+      <div class="hero-overlay"></div>
+      <div class="hero-noise"></div>
+    </div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
     <div class="hero-content">
-      <div class="trusted-badge hero-anim-1">
-        <span class="trusted-dot"></span>
-        Trusted Printing Solutions
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Zimbabwe's Office Solutions Leader Since 1999
       </div>
-      <h1 class="hero-headline hero-anim-2">
-        Your Printer.<br/><span class="accent">Our Expertise.</span>
+      <h1 class="hero-title">
+        <span class="line-reveal">Precision. Quality.</span>
+        <span class="line-reveal delay-1"><em>Performance.</em></span>
       </h1>
-      <p class="hero-sub hero-anim-3">Topiary Marketing supplies premium ink and toner cartridges and provides expert printer &amp; photocopier repair services — keeping your business running without interruption.</p>
-      <div class="hero-actions hero-anim-4">
-        <a href="#services" class="btn-primary">Explore Services</a>
-        <a href="#contact" class="btn-ghost">Get a Quote</a>
+      <p class="hero-sub line-reveal delay-2">
+        From boardrooms to back offices — Topiary Marketing delivers premium printing solutions, consumables, and hardware across Zimbabwe.
+      </p>
+      <div class="hero-actions line-reveal delay-3">
+        <a href="#contact" class="btn btn-primary">
+          <span>Get a Quote</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#services" class="btn btn-ghost">
+          <span>Explore Services</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="25">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="500">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Clients Served</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="10">0</span><span class="stat-plus">k+</span>
+          <span class="stat-label">Products Delivered</span>
+        </div>
       </div>
     </div>
-    <div class="hero-badge">
-      <div class="badge-ring">
-        <svg viewBox="0 0 140 140" class="badge-svg">
-          <path id="circle-text" d="M 70,70 m -50,0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" fill="none"/>
-          <text font-size="10.5" fill="#6B7FA8" font-family="Space Mono, monospace" letter-spacing="5">
-            <textPath href="#circle-text">TONER · REPAIRS · HARDWARE · </textPath>
-          </text>
-        </svg>
-      </div>
-    </div>
-    <div class="scroll-hint">
+
+    <a href="#about" class="hero-scroll-cue">
       <span>Scroll</span>
       <div class="scroll-line"></div>
-    </div>
+    </a>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section about" id="about">
+  <!-- ─── TICKER ───────────────────────────────── -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>HP</span><span class="sep">·</span>
+      <span>Canon</span><span class="sep">·</span>
+      <span>Samsung</span><span class="sep">·</span>
+      <span>Epson</span><span class="sep">·</span>
+      <span>Brother</span><span class="sep">·</span>
+      <span>Lexmark</span><span class="sep">·</span>
+      <span>Xerox</span><span class="sep">·</span>
+      <span>Ricoh</span><span class="sep">·</span>
+      <span>HP</span><span class="sep">·</span>
+      <span>Canon</span><span class="sep">·</span>
+      <span>Samsung</span><span class="sep">·</span>
+      <span>Epson</span><span class="sep">·</span>
+      <span>Brother</span><span class="sep">·</span>
+      <span>Lexmark</span><span class="sep">·</span>
+      <span>Xerox</span><span class="sep">·</span>
+      <span>Ricoh</span><span class="sep">·</span>
+    </div>
+  </div>
+
+  <!-- ─── ABOUT ────────────────────────────────── -->
+  <section id="about" class="section">
     <div class="container">
       <div class="about-grid">
-        <div class="about-left">
-          <p class="section-label">Who We Are</p>
-          <h2 class="section-title">Harare's Go-To <span class="accent">Print Specialists.</span></h2>
-          <p class="body-text">Topiary Marketing (Pvt) Ltd is a Harare-based specialist in computer consumables, ink and toner cartridges, printer and photocopier repairs, hardware, and electrical solutions.</p>
-          <p class="body-text">Located at Electra House along 49 Samora Machel Avenue, 3rd Floor, office 301 we serve businesses of all sizes — from small offices to large enterprises — with quality products and reliable repair services you can count on.</p>
-          <div class="stats-row">
-            <div class="stat">
-              <span class="stat-num">4+</span>
-              <span class="stat-label">Top Brands Stocked</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">Fast</span>
-              <span class="stat-label">Turnaround Repairs</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">100%</span>
-              <span class="stat-label">Genuine Products</span>
+        <div class="about-visual" data-aos="fade-right" data-aos-duration="900">
+          <div class="img-frame">
+            <img src="images/about.jpg.jpg" alt="Printer technician at work"/>
+            <div class="img-glow"></div>
+          </div>
+          <div class="about-badge-float">
+            <i class="fa-solid fa-award"></i>
+            <div>
+              <strong>Est. 1999</strong>
+              <span>25+ Years of Trust</span>
             </div>
           </div>
         </div>
-        <div class="about-right">
-          <div class="about-cards">
-            <div class="about-card ac-1">
-              <span class="ac-icon">🖨️</span>
-              <span class="ac-text">Printer Repairs</span>
+        <div class="about-text" data-aos="fade-left" data-aos-duration="900" data-aos-delay="100">
+          <p class="section-eyebrow">About Us</p>
+          <h2 class="section-title">Zimbabwe's Most <br/><em>Trusted</em> Office Solutions Partner</h2>
+          <p class="body-text">Since 1999, Topiary Marketing (Pvt) Ltd has been the go-to supplier for businesses across Zimbabwe seeking premium printing consumables, hardware, and office essentials. Based at Electra House in Harare, we serve clients from all sectors with dedication and expertise.</p>
+          <p class="body-text">We source genuine and high-yield compatible products from the world's leading brands — ensuring your business never misses a beat. Our commitment to quality, value, and exceptional service has earned us a reputation built on integrity.</p>
+          <div class="about-features">
+            <div class="feat-item">
+              <div class="feat-icon"><i class="fa-solid fa-shield-check"></i></div>
+              <div><strong>Genuine &amp; Compatible Products</strong><span>Only quality-verified stock</span></div>
             </div>
-            <div class="about-card ac-2">
-              <span class="ac-icon">💻</span>
-              <span class="ac-text">Hardware &amp; Electrical</span>
+            <div class="feat-item">
+              <div class="feat-icon"><i class="fa-solid fa-truck-fast"></i></div>
+              <div><strong>Fast Delivery &amp; Pickup</strong><span>Harare &amp; countrywide</span></div>
             </div>
-            <div class="about-card ac-3">
-              <span class="ac-icon">🗂️</span>
-              <span class="ac-text">Ink &amp; Toner</span>
+            <div class="feat-item">
+              <div class="feat-icon"><i class="fa-solid fa-headset"></i></div>
+              <div><strong>Dedicated Support</strong><span>Expert advice always available</span></div>
             </div>
           </div>
         </div>
@@ -121,242 +190,374 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="section services" id="services">
+  <!-- ─── SERVICES ─────────────────────────────── -->
+  <section id="services" class="section section-alt">
     <div class="container">
-      <div class="section-header">
-        <p class="section-label">What We Offer</p>
-        <h2 class="section-title">Everything Your Office <span class="accent">Needs.</span></h2>
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2 class="section-title">Our <em>Services</em> &amp; Product Range</h2>
+        <p class="section-sub">From individual cartridges to full office hardware setups — we have everything your workspace needs.</p>
       </div>
       <div class="services-grid">
-
-        <div class="service-card">
-          <div class="card-icon">🖨️</div>
-          <h3 class="card-name">Ink &amp; Toner Cartridges</h3>
-          <p class="card-desc">Genuine and compatible ink and toner cartridges for all major printer brands — keeping your printers stocked and your office uninterrupted.</p>
-          <ul class="card-features">
-            <li>Original OEM cartridges</li>
-            <li>Compatible alternatives</li>
-            <li>HP, Canon, Xerox, Samsung</li>
-            <li>Bulk orders welcome</li>
-            <li>Fast delivery in Harare</li>
-          </ul>
-          <a href="#contact" class="btn-ghost card-btn">Get a Quote →</a>
+        <div class="svc-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="svc-icon-wrap"><i class="fa-solid fa-fill-drip"></i></div>
+          <h3>Toner Cartridges</h3>
+          <p>High-yield genuine and compatible toner cartridges for laser printers and photocopiers. Canon, HP, Samsung and more.</p>
+          <div class="svc-tag">Laser</div>
         </div>
-
-        <div class="service-card featured">
-          <div class="popular-badge">Most Requested</div>
-          <div class="card-icon">🔧</div>
-          <h3 class="card-name">Printer &amp; Photocopier Repairs</h3>
-          <p class="card-desc">Expert diagnosis and repair of printers and photocopiers — minimising downtime and getting your equipment back in service fast.</p>
-          <ul class="card-features">
-            <li>On-site &amp; in-house repairs</li>
-            <li>All major brands serviced</li>
-            <li>Photocopier maintenance</li>
-            <li>Parts replacement</li>
-            <li>Post-repair testing</li>
-            <li>Service warranty provided</li>
-          </ul>
-          <a href="#contact" class="btn-primary card-btn">Book a Repair →</a>
+        <div class="svc-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="svc-icon-wrap"><i class="fa-solid fa-droplet"></i></div>
+          <h3>Ink Cartridges</h3>
+          <p>Original and compatible inkjet cartridges delivering vivid, crisp prints. All brands and models covered.</p>
+          <div class="svc-tag">Inkjet</div>
         </div>
-
-        <div class="service-card">
-          <div class="card-icon">⚡</div>
-          <h3 class="card-name">Hardware &amp; Electrical</h3>
-          <p class="card-desc">A wide range of computer consumables, hardware components, and electrical supplies to keep your office fully equipped and operational.</p>
-          <ul class="card-features">
-            <li>Computer consumables</li>
-            <li>Peripheral accessories</li>
-            <li>Electrical supplies</li>
-            <li>Office hardware components</li>
-            <li>Bulk purchasing available</li>
-          </ul>
-          <a href="#contact" class="btn-ghost card-btn">Enquire Now →</a>
+        <div class="svc-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="svc-icon-wrap"><i class="fa-solid fa-print"></i></div>
+          <h3>Printers &amp; Photocopiers</h3>
+          <p>Supply and repair of desktop printers, multifunction devices, and heavy-duty photocopiers for every scale.</p>
+          <div class="svc-tag">Hardware</div>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- BRANDS -->
-  <section class="section brands" id="brands">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Our Brands</p>
-        <h2 class="section-title">Trusted Names, <span class="accent">Genuine Products.</span></h2>
-        <p class="brands-sub">We stock and service equipment from the world's leading printer and hardware manufacturers.</p>
-      </div>
-      <div class="brands-grid">
-        <div class="brand-card">
-          <span class="brand-logo brand-xerox">xerox</span>
-          <p class="brand-desc">Toner cartridges, photocopier parts &amp; repairs</p>
+        <div class="svc-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="svc-icon-wrap"><i class="fa-solid fa-laptop"></i></div>
+          <h3>Laptops &amp; Computers</h3>
+          <p>Quality laptops, desktops, and accessories from trusted global brands to power your team's productivity.</p>
+          <div class="svc-tag">Computing</div>
         </div>
-        <div class="brand-card">
-          <span class="brand-logo brand-hp">HP</span>
-          <p class="brand-desc">Ink &amp; toner cartridges, printer servicing</p>
+        <div class="svc-card" data-aos="fade-up" data-aos-delay="320">
+          <div class="svc-icon-wrap"><i class="fa-solid fa-paperclip"></i></div>
+          <h3>Stationery</h3>
+          <p>A comprehensive range of office stationery — paper, pens, files, binders, and more for seamless operations.</p>
+          <div class="svc-tag">Office</div>
         </div>
-        <div class="brand-card">
-          <span class="brand-logo brand-canon">Canon</span>
-          <p class="brand-desc">Ink cartridges, scanner &amp; printer repairs</p>
-        </div>
-        <div class="brand-card">
-          <span class="brand-logo brand-samsung">SAMSUNG</span>
-          <p class="brand-desc">Toner cartridges &amp; hardware components</p>
+        <div class="svc-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="svc-icon-wrap"><i class="fa-solid fa-plug"></i></div>
+          <h3>Hardware &amp; Electrical</h3>
+          <p>IT peripherals, networking equipment, cables, UPS units, and essential electrical items for a connected workplace.</p>
+          <div class="svc-tag">IT &amp; Electrical</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="section testimonials" id="testimonials">
+  <!-- ─── WHY CHOOSE US ────────────────────────── -->
+  <section id="why-us" class="section">
+    <div class="why-bg-img">
+      <img src="images/why-bg.jpg" alt="Epson printer background"/>
+      <div class="why-overlay"></div>
+    </div>
     <div class="container">
-      <div class="section-header">
-        <p class="section-label">What Clients Say</p>
-        <h2 class="section-title">Trusted by Businesses <span class="accent">Across Harare.</span></h2>
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Why Topiary</p>
+        <h2 class="section-title">Reasons to <em>Choose</em> Us</h2>
       </div>
-      <div class="slider-wrapper">
-        <div class="slider-track" id="sliderTrack">
-          <div class="testimonial-card">
-            <p class="t-quote">"Topiary Marketing has been our go-to supplier for ink and toner for over two years. Always reliable, always genuine products. Our office has never had a supply issue since."</p>
-            <div class="t-author">
-              <div class="t-avatar">OM</div>
-              <div class="t-info">
-                <strong>Operations Manager</strong>
-                <span>Corporate Office, Harare CBD</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <p class="t-quote">"Our photocopier broke down at the worst time. Topiary had a technician on-site within hours and the machine was back running by end of day. Incredibly professional service."</p>
-            <div class="t-author">
-              <div class="t-avatar">SA</div>
-              <div class="t-info">
-                <strong>School Administrator</strong>
-                <span>Secondary School, Harare</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <p class="t-quote">"We bulk-order all our cartridges through Topiary. Their prices are competitive and the team is always helpful. Highly recommended for any business in Harare."</p>
-            <div class="t-author">
-              <div class="t-avatar">PO</div>
-              <div class="t-info">
-                <strong>Procurement Officer</strong>
-                <span>NGO, Harare</span>
-              </div>
-            </div>
-          </div>
+      <div class="why-grid">
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="0">
+          <div class="why-num">01</div>
+          <h3>25+ Years of Excellence</h3>
+          <p>Established in 1999, we bring over two and a half decades of market-leading experience in office supplies across Zimbabwe.</p>
         </div>
-        <div class="slider-controls">
-          <button class="slider-btn" id="prevBtn" aria-label="Previous">←</button>
-          <div class="slider-dots" id="sliderDots"></div>
-          <button class="slider-btn" id="nextBtn" aria-label="Next">→</button>
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="why-num">02</div>
+          <h3>Verified Quality</h3>
+          <p>Every product we supply — genuine or compatible — is rigorously vetted for performance, yield, and reliability.</p>
+        </div>
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="why-num">03</div>
+          <h3>Competitive Pricing</h3>
+          <p>We offer market-leading prices without compromising quality. Bulk discounts and corporate accounts available.</p>
+        </div>
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="why-num">04</div>
+          <h3>Expert Advice</h3>
+          <p>Our team helps you choose the right consumables and hardware for your specific printer model and needs.</p>
+        </div>
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="why-num">05</div>
+          <h3>Reliable Supply Chain</h3>
+          <p>Consistent stock availability means your office never runs dry. We keep what you need, when you need it.</p>
+        </div>
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="why-num">06</div>
+          <h3>Customer-First Culture</h3>
+          <p>Long-standing relationships with hundreds of Zimbabwean businesses testify to our unwavering commitment to service.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="section contact" id="contact">
+  <!-- ─── PRODUCTS ─────────────────────────────── -->
+  <section id="products" class="section section-alt">
     <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Our Brands</p>
+        <h2 class="section-title">Featured <em>Products</em></h2>
+        <p class="section-sub">We stock products from the world's most trusted printing and technology brands.</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="product-img-wrap">
+            <img src="images/hp-923.jpg.jpg" alt="HP 923 Ink Cartridges 8 Pack"/>
+            <div class="product-overlay">
+              <a href="#contact" class="product-cta">Request Stock <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand hp">HP</span>
+            <h4>HP 923 Ink Cartridges — 8 Pack</h4>
+            <p>Premium combo pack: 2× Black, 2× Cyan, 2× Magenta, 2× Yellow with latest smart chip technology.</p>
+          </div>
+        </div>
+        <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-img-wrap">
+            <img src="images/canon-245.jpg.jpg" alt="Canon PG-245 XL and CL-246"/>
+            <div class="product-overlay">
+              <a href="#contact" class="product-cta">Request Stock <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand canon">Canon</span>
+            <h4>Canon PG-245 XL &amp; CL-246</h4>
+            <p>PIXMA high-capacity black and tricolor inkjet cartridges using Canon FINE technology for sharper prints.</p>
+          </div>
+        </div>
+        <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-img-wrap">
+            <img src="images/canon-054.jpg.jpg" alt="Canon 054 Toner Cartridge Set"/>
+            <div class="product-overlay">
+              <a href="#contact" class="product-cta">Request Stock <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand canon">Canon</span>
+            <h4>Canon 054 Toner Set — 4 Pack</h4>
+            <p>High-yield KCMY toner cartridges compatible with Canon imageCLASS MF640C, MF642Cdw, and more.</p>
+          </div>
+        </div>
+        <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-img-wrap">
+            <img src="images/canon-046.jpg.jpg" alt="Canon 046H Toner Cartridges"/>
+            <div class="product-overlay">
+              <a href="#contact" class="product-cta">Request Stock <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand canon">Canon</span>
+            <h4>Canon 046H Toner — 4 Pack</h4>
+            <p>KCMY high-yield toner for Canon Color ImageCLASS MF735Cdw, LBP654Cdw, MF731Cdw &amp; MF733Cdw.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brands strip -->
+      <div class="brands-strip" data-aos="fade-up" data-aos-delay="100">
+        <p class="brands-label">Trusted Brands We Carry</p>
+        <div class="brands-row">
+          <div class="brand-pill"><i class="fa-solid fa-circle-check"></i> HP</div>
+          <div class="brand-pill"><i class="fa-solid fa-circle-check"></i> Canon</div>
+          <div class="brand-pill"><i class="fa-solid fa-circle-check"></i> Samsung</div>
+          <div class="brand-pill"><i class="fa-solid fa-circle-check"></i> Epson</div>
+          <div class="brand-pill"><i class="fa-solid fa-circle-check"></i> Brother</div>
+          <div class="brand-pill"><i class="fa-solid fa-circle-check"></i> Lexmark</div>
+          <div class="brand-pill"><i class="fa-solid fa-circle-check"></i> Xerox</div>
+          <div class="brand-pill"><i class="fa-solid fa-circle-check"></i> Ricoh</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA BANNER ───────────────────────────── -->
+  <section class="cta-section">
+    <div class="cta-bg-glow"></div>
+    <div class="container">
+      <div class="cta-inner" data-aos="zoom-in">
+        <h2>Ready to Equip Your <em>Office?</em></h2>
+        <p>Contact our team today for a personalised quote on any product or service. Fast response guaranteed.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <span>Request a Quote</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="https://wa.me/263772338862" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ──────────────────────────────── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-title">Need a Quote <br/>or <em>Repair?</em></h2>
+        <p class="section-sub">Fill in the form and we'll get back to you promptly. You can also call or WhatsApp us directly for a faster response.</p>
+      </div>
       <div class="contact-grid">
-        <div class="contact-left">
-          <p class="section-label">Get In Touch</p>
-          <h2 class="section-title">Need a Quote or <span class="accent">Repair?</span></h2>
-          <p class="body-text">Fill in the form and J. Nyamajiwa will get back to you promptly. You can also call or WhatsApp us directly for a faster response.</p>
-          <div class="contact-details">
-            <div class="cd-item">
-              <span class="cd-icon">📍</span>
-              <div>
-                <a href="https://www.google.com/maps/search/?api=1&query=Electra+House+49+Samora+Machel+Ave+Harare" target="_blank" class="contact-link">
-                  Electra House, 3rd Floor, Room 408<br/>49 Samora Machel Ave, Harare
-                </a>
-              </div>
-            </div>
-            <div class="cd-item">
-              <span class="cd-icon">📱</span>
-              <div>
-                <a href="tel:+263772338862" class="contact-link">+263 772 338 862</a><br/>
-                <a href="tel:+263712095778" class="contact-link">+263 712 095 778</a><br/>
-                <a href="tel:+263753122" class="contact-link">+0242 753 122</a>
-              </div>
-            </div>
-            <div class="cd-item">
-              <span class="cd-icon">✉️</span>
-              <div>
-                <a href="mailto:topiarymarketing@gmail.com" class="contact-link">topiarymarketing@gmail.com</a>
-              </div>
-            </div>
-            <div class="cd-item">
-              <span class="cd-icon">💬</span>
-              <span><a href="https://wa.me/263772338862" target="_blank" class="contact-link">WhatsApp: +263 772 338 862</a></span>
+
+        <!-- Contact info -->
+        <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+          <div class="contact-item">
+            <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Address</strong>
+              <span>Electra House, 3rd Floor, Room 408</span>
+              <span>49 Samora Machel Ave, Harare</span>
             </div>
           </div>
+          <div class="contact-item">
+            <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+263772338862">+263 772 338 862</a>
+              <a href="tel:+263712095778">+263 712 095 778</a>
+              <a href="tel:+263242753122">+0242 753 122</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:topiarymarketing@gmail.com">topiarymarketing@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/263772338862" target="_blank" rel="noopener">+263 772 338 862</a>
+            </div>
+          </div>
+          <a href="https://wa.me/263772338862" target="_blank" rel="noopener" class="btn btn-whatsapp" style="margin-top:1.5rem; width:fit-content">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Message us on WhatsApp</span>
+          </a>
         </div>
-        <div class="contact-right">
-          <div class="form-group">
-            <label for="nameInput">Your Name</label>
-            <input type="text" id="nameInput" placeholder="Tatenda Moyo" />
+
+        <!-- Contact form -->
+        <form class="contact-form" id="contact-form" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+          <!-- Web3Forms -->
+          <input type="hidden" name="access_key" value="d4f37dc3-ade3-4680-9ef6-478c8f6a9f61"/>
+          <input type="hidden" name="subject" value="New Enquiry — Topiary Marketing Website"/>
+          <input type="hidden" name="from_name" value="Topiary Marketing Website"/>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Your Name</label>
+              <input id="cf-name" type="text" name="name" placeholder="Tatenda Moyo" required/>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address</label>
+              <input id="cf-email" type="email" name="email" placeholder="tatenda@example.com" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-phone">Phone Number</label>
+              <input id="cf-phone" type="tel" name="phone" placeholder="+263 7XX XXX XXX"/>
+            </div>
+            <div class="form-group">
+              <label for="cf-service">Service Required</label>
+              <div class="select-wrap">
+                <select id="cf-service" name="service" required>
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="Ink &amp; Toner Cartridges">Ink &amp; Toner Cartridges</option>
+                  <option value="Printer Repair">Printer Repair</option>
+                  <option value="Photocopier Repair / Servicing">Photocopier Repair / Servicing</option>
+                  <option value="Hardware &amp; Electrical Supplies">Hardware &amp; Electrical Supplies</option>
+                  <option value="Bulk Order Enquiry">Bulk Order Enquiry</option>
+                  <option value="Laptops &amp; Computers">Laptops &amp; Computers</option>
+                  <option value="Stationery">Stationery</option>
+                  <option value="Other">Other</option>
+                </select>
+                <i class="fa-solid fa-chevron-down select-arrow"></i>
+              </div>
+            </div>
           </div>
           <div class="form-group">
-            <label for="emailInput">Email Address</label>
-            <input type="email" id="emailInput" placeholder="tatenda@example.com" />
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" placeholder="Tell us what you need…" required></textarea>
           </div>
-          <div class="form-group">
-            <label for="phoneInput">Phone Number</label>
-            <input type="tel" id="phoneInput" placeholder="+263 7XX XXX XXX" />
-          </div>
-          <div class="form-group">
-            <label for="serviceInput">Service Required</label>
-            <select id="serviceInput">
-              <option value="">Select a service</option>
-              <option>Ink &amp; Toner Cartridges</option>
-              <option>Printer Repair</option>
-              <option>Photocopier Repair / Servicing</option>
-              <option>Hardware &amp; Electrical Supplies</option>
-              <option>Bulk Order Enquiry</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="messageInput">Message</label>
-            <textarea id="messageInput" placeholder="Describe your printer model, issue, or what you need..."></textarea>
-          </div>
-          <button class="btn-primary btn-full" id="submitBtn">Send Enquiry →</button>
-          <p class="form-status" id="formStatus"></p>
-        </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-full">
+            <span>Send Enquiry</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-note">We'll respond within 24 hours.</p>
+        </form>
+
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <a href="#hero" class="nav-logo">
-          <div class="logo-container">
-            <span class="brand-leaf">✦</span>
-            <span class="brand-name">TOPIARY</span>
-            <span class="brand-sub">MARKETING</span>
+  <!-- ─── FOOTER ───────────────────────────────── -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-accent">T</span>opiary<span class="logo-sub">Marketing</span>
+            </div>
+            <p>Zimbabwe's trusted partner for premium printing consumables, hardware, and office essentials since 1999. Electra House, Harare.</p>
+            <div class="footer-socials">
+              <a href="https://wa.me/263772338862" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="mailto:topiarymarketing@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="tel:+263772338862" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+            </div>
           </div>
-        </a>
-        <p class="footer-tagline">Specialists in Computer Consumables · Ink &amp; Toner · Printer Repairs · Hardware &amp; Electrical</p>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Our Services</a></li>
+              <li><a href="#why-us">Why Choose Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="#services">Toner Cartridges</a></li>
+              <li><a href="#services">Ink Cartridges</a></li>
+              <li><a href="#services">Printers &amp; Copiers</a></li>
+              <li><a href="#services">Laptops</a></li>
+              <li><a href="#services">Stationery</a></li>
+              <li><a href="#services">Hardware &amp; Electrical</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-contact">
+              <li><i class="fa-solid fa-location-dot"></i><span>Electra House, 3rd Floor, Room 408<br/>49 Samora Machel Ave, Harare</span></li>
+              <li><i class="fa-solid fa-phone"></i><a href="tel:+263772338862">0772 338 862</a></li>
+              <li><i class="fa-solid fa-phone"></i><a href="tel:+263712095778">0712 095 778</a></li>
+              <li><i class="fa-solid fa-phone"></i><a href="tel:+263242753122">0242 753 122</a></li>
+              <li><i class="fa-solid fa-envelope"></i><a href="mailto:topiarymarketing@gmail.com">topiarymarketing@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#brands">Brands</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <p class="footer-copy">© 2025 Topiary Marketing (Pvt) Ltd. Electra House, 3rd Floor Room 408, 49 Samora Machel Ave, Harare, Zimbabwe.</p>
     </div>
-     <p class="footer-designer">
-      Designed by <a href="#" target="_blank">Invitt Co</a>
-    </p>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Topiary Marketing (Pvt) Ltd. All rights reserved.</p>
+        <p class="footer-reg">Registered in Zimbabwe</p>
+        <p class="footer-designed-by">Designed by <a href="https://invittco.com" target="_blank" rel="noopener" class="invitt-link">Invitt Co</a></p>
+      </div>
+    </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- ─── BACK TO TOP ──────────────────────────── -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
