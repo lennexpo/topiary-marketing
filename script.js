@@ -16,7 +16,7 @@
   }
 
   window.addEventListener('load', () => setTimeout(hidePreloader, 2000));
-  setTimeout(hidePreloader, 1500); // fallback
+  setTimeout(hidePreloader, 3200); // fallback
 })();
 
 /* ── GSAP HERO ANIMATIONS ─────────────────────── */
