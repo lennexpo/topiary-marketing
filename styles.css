@@ -31,7 +31,7 @@
   --transition:  .35s cubic-bezier(.4,0,.2,1);
 }
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
 body {
   background: var(--dark);
   color: var(--white);
@@ -60,7 +60,7 @@ button { cursor: pointer; border: none; background: none; }
 }
 #preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
 
-.pre-inner { text-align: center; }
+.pre-inner { text-align: center; padding: 0 1.5rem; max-width: 100%; }
 .pre-logo {
   font-family: var(--font-display);
   font-size: clamp(2.5rem,6vw,4rem);
@@ -745,5 +745,6 @@ button { cursor: pointer; border: none; background: none; }
   .hero-title { font-size: 2.5rem; }
   .about-badge-float { display: none; }
   .cta-inner { padding: 2rem 1.5rem; }
+   .pre-logo { font-size: 1.8rem; }
 }
 [data-aos] { pointer-events: auto !important; }
