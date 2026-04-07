@@ -465,7 +465,7 @@
             <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
             <div>
               <strong>Email</strong>
-              <a href="/cdn-cgi/l/email-protection#12667d627b73606b7f73607977667b7c7552757f737b7e3c717d7f"><span class="__cf_email__" data-cfemail="7c08130c151d0e05111d0e17190815121b3c1b111d1510521f1311">[email&#160;protected]</span></a>
+              <a class="email-reveal" href="#"></a>
             </div>
           </div>
           <div class="contact-item">
@@ -548,7 +548,7 @@
             <p>Zimbabwe's trusted partner for premium printing consumables, hardware, and office essentials since 1999. Electra House, Harare.</p>
             <div class="footer-socials">
               <a href="https://wa.me/263772338862" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-              <a href="/cdn-cgi/l/email-protection#b9cdd6c9d0d8cbc0d4d8cbd2dccdd0d7def9ded4d8d0d597dad6d4" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="#" class="email-reveal-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
               <a href="tel:+263772338862" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
             </div>
           </div>
@@ -580,7 +580,7 @@
               <li><i class="fa-solid fa-phone"></i><a href="tel:+263772338862">0772 338 862</a></li>
               <li><i class="fa-solid fa-phone"></i><a href="tel:+263712095778">0712 095 778</a></li>
               <li><i class="fa-solid fa-phone"></i><a href="tel:+263242753122">0242 753 122</a></li>
-              <li><i class="fa-solid fa-envelope"></i><a href="/cdn-cgi/l/email-protection#a9ddc6d9c0c8dbd0c4c8dbc2ccddc0c7cee9cec4c8c0c587cac6c4"><span class="__cf_email__" data-cfemail="473328372e26353e2a26352c22332e292007202a262e2b6924282a">[email&#160;protected]</span></a></li>
+              <li><i class="fa-solid fa-envelope"></i><a href="#" class="email-reveal"></a></li>
             </ul>
           </div>
         </div>
@@ -604,5 +604,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="script.js"></script>
+  <script>
+    // Email built at runtime so Cloudflare obfuscation never fires
+    (function() {
+      var u = 'topiarymarketing', d = 'gmail.com';
+      var email = u + '\u0040' + d;
+      var mailto = 'mailto:' + email;
+      document.querySelectorAll('.email-reveal').forEach(function(el) {
+        el.href = mailto;
+        el.textContent = email;
+      });
+      document.querySelectorAll('.email-reveal-icon').forEach(function(el) {
+        el.href = mailto;
+      });
+    })();
+  </script>
 </body>
 </html>
