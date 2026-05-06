@@ -18,23 +18,23 @@
   <meta name="keywords" content="toner cartridges Zimbabwe, ink cartridges Harare, printer repair Harare, photocopier repair Zimbabwe, office supplies Harare, HP toner Zimbabwe, Canon cartridges Zimbabwe, Xerox Zimbabwe, laptops Harare, stationery Harare, office solutions Zimbabwe"/>
   <meta name="author" content="Topiary Marketing (Pvt) Ltd"/>
   <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://www.topiarymarketing.co.zw/"/>
+  <link rel="canonical" href="https://topiarymarketing.co.zw/"/>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://www.topiarymarketing.co.zw/"/>
+  <meta property="og:url" content="https://topiarymarketing.co.zw/"/>
   <meta property="og:title" content="Topiary Marketing | Zimbabwe's Premier Office Solutions Partner"/>
   <meta property="og:description" content="Toner cartridges, ink, printers, laptops &amp; office supplies. Serving Zimbabwe since 1999. Based at Electra House, Harare."/>
-  <meta property="og:image" content="https://www.topiarymarketing.co.zw/favicon.png"/>
+  <meta property="og:image" content="https://topiarymarketing.co.zw/favicon.png"/>
   <meta property="og:locale" content="en_ZW"/>
   <meta property="og:site_name" content="Topiary Marketing"/>
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:url" content="https://www.topiarymarketing.co.zw/"/>
+  <meta name="twitter:url" content="https://topiarymarketing.co.zw/"/>
   <meta name="twitter:title" content="Topiary Marketing | Zimbabwe's Premier Office Solutions Partner"/>
   <meta name="twitter:description" content="Toner cartridges, ink, printers, laptops &amp; office supplies. Serving Zimbabwe since 1999. Based at Electra House, Harare."/>
-  <meta name="twitter:image" content="https://www.topiarymarketing.co.zw/favicon.png"/>
+  <meta name="twitter:image" content="https://topiarymarketing.co.zw/favicon.png"/>
 
   <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
@@ -42,8 +42,8 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Topiary Marketing (Pvt) Ltd",
-    "url": "https://www.topiarymarketing.co.zw",
-    "image": "https://www.topiarymarketing.co.zw/favicon.png",
+    "url": "https://topiarymarketing.co.zw",
+    "image": "https://topiarymarketing.co.zw/favicon.png",
     "description": "Zimbabwe's trusted supplier of toner cartridges, ink cartridges, printers, photocopiers, laptops, stationery, and hardware since 1999.",
     "address": {
       "@type": "PostalAddress",
@@ -132,6 +132,9 @@
   .badge-item strong { display: block; font-size: 1.125rem; font-weight: 700; color: var(--text); font-family: var(--serif); }
   .badge-divider { width: 1px; height: 36px; background: var(--border); }
   .hero-visual { position: relative; display: flex; align-items: center; justify-content: center; }
+  .hero-img-wrap { position: relative; width: 100%; max-width: 480px; border-radius: var(--radius); overflow: hidden; box-shadow: 0 24px 64px rgba(28,26,23,0.18); }
+  .hero-img-wrap img { width: 100%; height: 420px; object-fit: cover; display: block; }
+  .hero-img-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(28,26,23,0.15) 0%, transparent 60%); }
   .hero-card-stack { width: 100%; max-width: 420px; position: relative; }
   .hero-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; }
   .hero-card-main { box-shadow: 0 8px 40px rgba(28,26,23,0.12); }
@@ -180,7 +183,8 @@
   /* WHY US */
   .why-section { background: var(--surface); }
   .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-  .why-visual { background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px; display: flex; flex-direction: column; gap: 16px; }
+  .why-visual { border-radius: var(--radius); overflow: hidden; box-shadow: 0 16px 48px rgba(28,26,23,0.14); }
+  .why-visual img { width: 100%; height: 420px; object-fit: cover; display: block; }
   .why-row { display: flex; align-items: center; gap: 16px; padding: 16px; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-sm); }
   .why-row-icon { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
   .why-row-icon.a { background: var(--accent-bg); }
@@ -304,11 +308,9 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="hero-card-stack">
-        <div class="hero-card hero-card-main">
-          <div class="hero-tag">Our Services</div>
-          <div class="hero-card-title">Everything Print-Related</div>
-          <div class="hero-card-sub">One stop. All your printing needs solved.</div>
+      <div class="hero-img-wrap">
+        <img src="images/hero-bg.jpg" alt="Topiary Marketing — printer ink and toner cartridges in Harare, Zimbabwe"/>
+        <div class="hero-img-overlay"></div>
           <div class="service-pills">
             <div class="pill"><span class="pill-dot amber"></span>Ink & Toner Cartridges</div>
             <div class="pill"><span class="pill-dot green"></span>Printer & Photocopier Repairs</div>
@@ -373,22 +375,7 @@
   <div class="section-inner">
     <div class="why-grid">
       <div class="why-visual reveal">
-        <div class="why-row">
-          <div class="why-row-icon a">⚡</div>
-          <div class="why-row-text"><strong>Fast Turnaround</strong><span>Most repairs completed same day</span></div>
-        </div>
-        <div class="why-row">
-          <div class="why-row-icon g">🛡️</div>
-          <div class="why-row-text"><strong>Quality Guaranteed</strong><span>All repairs come with a service warranty</span></div>
-        </div>
-        <div class="why-row">
-          <div class="why-row-icon b">📦</div>
-          <div class="why-row-text"><strong>Stock Always Available</strong><span>Extensive cartridge inventory on-hand</span></div>
-        </div>
-        <div class="why-row">
-          <div class="why-row-icon a">📞</div>
-          <div class="why-row-text"><strong>Expert Advice</strong><span>Free consultation on all print needs</span></div>
-        </div>
+        <img src="images/why-bg.jpg" alt="Topiary Marketing office equipment and supplies"/>
       </div>
       <div class="reveal">
         <div class="section-label">Why Topiary Marketing</div>
