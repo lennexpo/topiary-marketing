@@ -45,7 +45,7 @@
     "@type": "LocalBusiness",
     "name": "Topiary Marketing (Pvt) Ltd",
     "url": "https://topiarymarketing.co.zw",
-    "image": "https://topiarymarketing.co.zw/favicon.png",
+    "image": "https://topiarymarketing.co.zw/android-chrome-512x512.png",
     "description": "Zimbabwe's trusted supplier of toner cartridges, ink cartridges, printers, photocopiers, laptops, stationery, and hardware since 1999.",
     "address": {
       "@type": "PostalAddress",
@@ -62,9 +62,14 @@
   </script>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  <link rel="shortcut icon" href="favicon.png"/>
-  <link rel="apple-touch-icon" href="favicon.png"/>
+  <link rel="icon" href="favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png"/>
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png"/>
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -97,7 +102,8 @@
     box-shadow: 0 8px 40px rgba(28,26,23,0.14), inset 0 1px 0 rgba(255,255,255,0.60);
   }
   .nav-inner { padding: 0 8px 0 24px; height: 58px; display: flex; align-items: center; gap: 4px; }
-  .logo { font-family: var(--serif); font-size: 1.25rem; color: var(--text); text-decoration: none; letter-spacing: -0.02em; margin-right: auto; white-space: nowrap; }
+  .logo { font-family: var(--serif); font-size: 1.25rem; color: var(--text); text-decoration: none; letter-spacing: -0.02em; margin-right: auto; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; }
+  .logo-mark { height: 26px; width: auto; display: block; flex-shrink: 0; }
   .logo span { color: var(--accent); }
   .nav-links { list-style: none; display: flex; gap: 2px; }
   .nav-links a { display: block; padding: 7px 13px; font-size: 0.825rem; font-weight: 500; color: var(--text-muted); text-decoration: none; border-radius: 100px; transition: color var(--transition), background var(--transition); }
@@ -229,7 +235,7 @@
 
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
-    <a href="index.html" class="logo">Topiary<span> Marketing</span></a>
+    <a href="index.html" class="logo"><img src="images/logo-mark.png" alt="Topiary Marketing logo" class="logo-mark"/>Topiary<span> Marketing</span></a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
